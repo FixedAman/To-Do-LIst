@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(31, 31, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    padding: 10px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 40px;
+    padding: 40px 30px 70px;
+    background: #fff;
+    border-radius: 10px;
+
+
+}
+
+.todo-app img {
+    height: 30px;
+    width: 30px;
+
+}
+
+.todo-app h2 {
+    display: flex;
+    align-items: center;
+    color: rgb(103, 95, 32);
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.list_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 16px;
+    border-radius: 10px;
+    background: rgba(218, 218, 218, 0.551)
+}
+
+button {
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(163, 233, 33);
+
+
+}
+
+ul {
+    margin-top: 15px;
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px 10px 10px 10px;
+    font-size: 17px;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    height: 28px;
+    width: 28px;
+    background-image: url(https://icons.veryicon.com/png/o/miscellaneous/wens/uncheck.png);
+    background-position: center;
+    position: absolute;
+    background-size: cover;
+    border-radius: 50%;
+    right: 12px;
+    top: 2px;
+    
+}
+ul li.checked {
+    text-decoration: line-through;
+    color: #555;
+}
+ul li.checked::before{
+background-image: url(https://www.pngitem.com/pimgs/m/509-5099442_verified-blue-check-mark-png-transparent-png.png);
+}
+ul li span {
+    right: 13px;
+    height: 40px;
+    width: 40px;
+    top: 5px;
+    position: absolute;
+    color: #555;
+}
